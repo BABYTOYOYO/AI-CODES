@@ -1,0 +1,13 @@
+def missing_char(str, n):
+    # Check if n is a valid index within the range of the string
+    if 0 <= n < len(str):
+        # Use string slicing to remove the character at index n
+        return str[:n] + str[n+1:]
+    else:
+        # If n is out of range, return the original string
+        return str
+
+# Examples
+print(missing_char('kitten', 1))  # Output: 'ktten'
+print(missing_char('kitten', 0))  # Output: 'itten'
+print(missing_char('kitten', 4))  # Output: 'kittn'
