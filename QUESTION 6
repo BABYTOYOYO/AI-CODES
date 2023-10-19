@@ -1,0 +1,15 @@
+import numpy as np
+
+# Define the original arrays
+array1 = np.array([0, 1, 2])
+array2 = np.array([2, 1, 0])
+
+# Stack the arrays horizontally to create a 2xN array
+stacked_arrays = np.vstack((array1, array2))
+
+# Compute the covariance matrix
+covariance_matrix = np.cov(stacked_arrays)
+
+# Print the covariance matrix
+print("Covariance matrix of the said arrays:")
+print(covariance_matrix)
