@@ -1,0 +1,22 @@
+import math
+
+# Fixed values of C and H
+C = 50
+H = 30
+
+# Input sequence of D values as a comma-separated string
+input_sequence = input("Enter comma-separated values of D: ")
+
+# Split the input string into a list of D values
+D_values = input_sequence.split(',')
+
+# Initialize a list to store the resulting values of Q
+resulting_values = []
+
+# Calculate Q for each value of D and store the results
+for D in D_values:
+    Q = math.sqrt((2 * C * int(D)) / H)
+    resulting_values.append(round(Q))  # Round to the nearest integer
+
+# Print the resulting values of Q
+print("Resulting values of Q:", ', '.join(map(str, resulting_values)))
