@@ -1,0 +1,13 @@
+import numpy as np
+
+# Create a NumPy array
+original_array = np.array([[0, 1], [2, 3], [4, 5]])
+
+# Convert the NumPy array to a Python list
+list_structure = original_array.tolist()
+
+# Print the original array and the converted list
+print("Original array elements:")
+print(original_array)
+print("\nArray to list:")
+print(list_structure)
