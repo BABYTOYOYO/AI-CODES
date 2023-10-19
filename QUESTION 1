@@ -1,0 +1,11 @@
+# Initialize an empty list to store the results
+result_list = []
+
+# Iterate through numbers from 2000 to 3200 (both included)
+for number in range(2000, 3201):
+    # Check if the number is divisible by 7 and not a multiple of 5
+    if number % 7 == 0 and number % 5 != 0:
+        result_list.append(number)
+
+# Print the list of numbers
+print(result_list)
